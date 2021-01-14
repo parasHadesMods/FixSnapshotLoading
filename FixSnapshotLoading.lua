@@ -18,7 +18,7 @@ function UncollapseTable(tableArg)
   local sorted = {}
   for i = 1, highest do
     if tableArg[i] ~= nil then
-      table.insert(sorted, table[i])
+      table.insert(sorted, tableArg[i])
     else
       table.insert(sorted, {})
     end
